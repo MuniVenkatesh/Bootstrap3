@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Vacation Planner
+		</title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	</head>
+<body>
+  <div class="container" id="muni">
+    <div class="navbar navbar-fixed-top">
+			<div class="container">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="images/logo.gif" alt="logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Book-Tickets<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Bus Booking</a>
+								</li>
+								<li>
+									<a href="#">Train Booking</a>
+								</li>
+								<li>
+									<a href="#">Plane Booking</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input type="text" class="form-control" placeholder="Search Here" id="searchbox">
+							<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+				</div><!-- end nav-collapse -->
+			</div><!-- end container-->
+		</div><!--end nav-bar-->
+
+    <div class="carousel slide" id="pic">
+			<div class="carousel-inner">
+				<div class="item active" id="bus">
+					<div class="carousel-caption">
+						<h5>Plan Your Vacation</h5>
+						<p>Roadways- Most widely used transport</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item-->
+				<div class="item" id="train">
+					<div class="carousel-caption">
+						<h5>Plan Your Vacation</h5>
+						<p>Railways- Cheapest transport available</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item-->
+				<div class="item" id="plane">
+					<div class="carousel-caption">
+						<h5>Plan Your Vacation</h5>
+						<p>Airways- Fastest means of transport</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item-->
+			</div><!--end carousel-inner-->
+			<a class="left carousel-control" data-slide="prev" href="#pic"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#pic"><span class="icon-next"></span></a>
+		</div><!--end carousel-->
+
+		<div class="row" id="txt">
+			<div class="col-12">
+				<div class="well">
+					<div class="page-header">
+						<h2>Vacation Planner<small>  Plan your vacation with us</small></h2>
+						<p class="lead" id="font1">Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all of one's lifetime.</p>
+					</div><!--end page-header-->
+				</div><!--end well-->
+			</div><!--end col-12-->
+    </div><!--end row-->
+
+		<div class="row" id="booktkt">
+			<div class="col-12">
+				<h2>Book Tickets</h2>
+				<p class="lead">Here you can make online bookings with a click. We offer a multitude of choices in online booking services.</p>
+			</div><!--end col-12-->
+		</div><!--end row-->
+		<div class="row" id="ticket">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Travel in Bus</h3>
+					</div><!--end panel-heading-->
+					<img src="images/bus1.jpg" alt="bus" height="150" width="200" class="img-circle">
+					<p>Traveling by bus has become a much-preferred option now a days</p>
+					<a href="#" data-toggle="tooltip" title="Bus Booking"><button class="btn btn-warning">Book Now</button></a>
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Travel in Train</h3>
+					</div><!--end panel-heading-->
+					<img src="images/train1.jpg" alt="train" height="150" width="200" class="img-circle">
+					<p>Traveling by train is the cheapest means of transport available</p>
+					<a href="#" data-toggle="tooltip" title="Train Booking"><button class="btn btn-warning">Book Now</button></a>
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Travel in Plane</h3>
+					</div><!--end panel-heading-->
+					<img src="images/plane.png" alt="planee" height="150" width="200" class="img-circle">
+					<p>Traveling by Plane is the most luxorious means of transport</p>
+					<a href="#" data-toggle="tooltip" title="Plane Booking"><button class="btn btn-warning">Book Now</button></a>
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+		</div><!--end row-->
+
+		<div class="row" id="tabs">
+			<div class="col-12">
+				<h3>About Us</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#first" data-toggle="tab">Map</a></li>
+						<li><a href="#second" data-toggle="tab">Contact</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="first">
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location</h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.00655195098!2d77.63875141435318!3d12.90730001977941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1490cf898a69%3A0x7baad5409c686271!2sKids+Paradise!5e0!3m2!1sen!2sin!4v1465792353930" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="tab-pane" id="second"><br><br>
+							<p class="lead" id="contact">Mobile: +91-9206725487<br>
+								Email: munivenkatesh.pydi@gmail.com</p>
+								<a href="#enroll" role="button" class="btn btn-primary" data-toggle="modal"> Enroll Here</a>
+								<div class="modal fade" id="enroll">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+													<button class="close" data-dismiss="modal"> &times; </button>
+													<h4 class="modal-title">Subscribe for Offers</h4>
+											</div><!--end modal-header-->
+											<div class="modal-body">
+													<p class="lead" id="modalbody">Subscribe with us to get updates</p>
+											</div><!--end modal-body-->
+											<div class="modal-footer">
+												<form class="horizontal-form">
+														<div class="col-12 form-group">
+															<label class="col-lg-2 control-label" for="name">Name</label>
+															<div class="col-lg-10">
+																<input class="form-control" id="name" type="text">
+															</div>
+														</div>
+														<div class="col-12 form-group">
+														<label class="col-lg-2 control-label" for="mail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="mail" type="email">
+														</div>
+													</div>
+												<input type="submit" class="btn btn-primary pull-right" value="Subscribe">
+											</form>
+										</div><!--end modal-footer-->
+									</div><!--end modal-content-->
+								</div><!--end modal-dialog-->
+							</div><!--end modal-->
+						</div><!--end tab-pane-->
+					</div><!--end tab-content-->
+				</div><!--end tabbable-->
+			</div><!--end col-12-->
+		</div><!--end row-->
+	</div><!--end container-->
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 visible-lg">
+						<p>copyright &copy; Muni</p>
+				</div>
+				<div class="col-sm-4">
+					<h4>Follow</h4>
+					<ul class="social">
+						<li><a href="#">Google +</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<form class="horizontal-form">
+						<label class="col-sm-2 control-label" for="feed">Feedback</label>
+						<div class="form-group">
+							<input type="col-sm-10 textarea" class="form-control" id="feed">
+							<input type="submit" class="btn btn-small btn-primary" id="feedback" value="Submit feedback">
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-4 visible-sm">
+						<p>copyright &copy; Muni</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+</body>
+</html>
